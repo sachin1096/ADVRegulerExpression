@@ -12,3 +12,11 @@ print(re.findall(r"\w{5,10}", "I really like strawberries"))
 print(re.findall(r"\w{5,}", "I really like strawberries"))
 
 print(re.search(r"s\w{,20}", "I really like strawberries"))
+
+Output --
+<re.Match object; span=(2, 7), match='ghost'>
+<re.Match object; span=(2, 7), match='scary'>
+['scary', 'ghost', 'appea']
+['really', 'strawberri']
+['really', 'strawberries']
+<re.Match object; span=(14, 26), match='strawberries'>
